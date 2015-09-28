@@ -1,0 +1,62 @@
+﻿@media screen
+{
+	body {
+		background-image: url("images/background/hardwoodFloor1.jpg");
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-position: center center;
+		background-repeat: repeat-y;
+		background-size: cover;
+	}
+		
+	p.textStyle {
+	    text-align: center;	
+	    font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 150%;
+		color: white;
+		font-weight: bold;
+
+	}
+	
+	.bannerStyle {
+		background-color: transparent;	
+	}
+	
+	
+	ul {
+	    padding: 0;
+	}
+	
+	li {
+	    display: inline;
+	    font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 120%;
+		font-weight: bold;
+	}
+	
+	li a {
+		background-color: white;
+		color:#FF8000;
+		padding: 10px 20px;
+		text-decoration: none;
+		border-radius: 20px 20px 20px 20px;
+	}
+	
+	li a:hover {
+		background-color: black;
+	}
+	
+	.tableStyle {
+		background-color: white;
+		border: 1px solid black;
+		border-collapse: collapse;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	tr, td{
+		border: 1px solid black;
+		text-align: center;
+	}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="homepageStyle.css" />
+	<script language="javascript" type="text/javascript" src="part1.js"></script>
+  </head>
+
+  <body>
+  	<nav>
+	  	<ul>
+		  <li><a href="index.html">Part 1</a></li>
+		  <li><a href="part2.html">Part 2</a></li>
+		</ul>
+  	</nav>
+  	
+  	<p class="textStyle"> Addition Calculator</p>
+  	
+	<p id="displayName"></p>
+
+	<p id="displayMath"></p>
+	
+	<button onclick="refresh()">Refresh page</button>
+	
+	
+	<script language="javascript" type="text/javascript">
+	
+	alert("Welcome!");
+	
+	getName();
+	var number1 = getNumber("Parameter 1");
+	var number2 = getNumber("Parameter 2");
+	
+	displaySum(number1,number2);
+	
+	alert("Thanks for visiting!");
+	</script>
+  
+  </body>
+</html>

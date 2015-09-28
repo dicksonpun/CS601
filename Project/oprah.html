@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GIVEAWAY</title>
+    <link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/snake.ico" type="image/x-icon" />
+</head>
+
+<body id="oprahBackground">
+	<ul class="navigation">
+		<li id="goToInstructions">
+			<h2>INSTRUCTIONS</h2>
+			<p>FOR NOOBS</p>
+		</li>	
+		<li id="goToStart">
+			<h2>START NOW</h2>
+			<p>PLAY!</p>
+		</li>
+		<li id="goToHallOfFame">
+			<h2>HALL OF FAME</h2>
+			<p>TOP 10 SCORES</p>
+		</li>
+		<li id="oprah">
+			<h2>OPRAH WINFREY</h2>
+			<p>BECAUSE I CAN</p>
+		</li>
+	</ul>
+
+	<script>
+		$(document).ready(function(){
+			$("#goToInstructions").click(function(){
+				location.href = "index.html";
+			});
+			$("#goToStart").click(function(){
+				location.href = "play.html";
+			});
+			$("#goToHallOfFame").click(function(){
+				location.href = "highscores.html";
+			});
+			$("#oprah").click(function(){
+				location.href = "oprah.html";
+			});	
+			
+			$.ajax({
+				type: 'POST', 
+				url: 'oprahShow.php',
+				success: function(data) {
+					//alert(data);
+				},
+				error: function(data) {
+			        //alert("Error: Unsuccessful AJAX response." + data);
+			    }				
+			});
+
+		});
+	</script>
+	   
+</body>
+</html>
+
+

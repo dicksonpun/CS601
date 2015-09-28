@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="homepageStyle.css" />
+	<script language="javascript" type="text/javascript" src="part2.js"></script>
+  </head>
+
+  <body>
+  	<nav>
+	  	<ul>
+		  <li><a href="index.html">Part 1</a></li>
+		  <li><a href="part2.html">Part 2</a></li>
+		</ul>
+  	</nav>
+  	
+  	<p class="textStyle"> Form Validation</p>
+  	
+	<form name="myForm" onsubmit="return validateForm()">
+		<input type="text" name="Name" placeholder="Name" required title="(2 character minimum)"><br>
+		<input type="text" name="Nickname" placeholder="Nickname" required title="(3 character minimum and alphanumeric only)"><br>
+		<input type="email" name="Email" placeholder="Email" required title= "Valid email required" ><br>
+		<input type="submit" value="Submit">
+	</form>
+  </body>
+</html>

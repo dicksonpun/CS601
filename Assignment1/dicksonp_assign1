@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+    <meta name="description" content="You must have at least two paragraphs, two hyperlinks, and one image.">
+  </head>
+
+  <body>
+  <h1>About Me</h1>
+  <!-- You must have at least two paragraphs, two hyperlinks, and one image. -->
+  <p>My name is Dickson Pun. I am a part-time student at <a href="http://www.bu.edu/met/">Boston University - Metropolitan College</a>.
+  I am pursuing a Master's Degree in Computer Science. I am currently taking CS601 for Web Application Development.   
+  </p>
+  
+  <p>I am an avid basketball fan. My prediction for the champion of the 2015-2016 NBA Finals match-up between the <a href="http://en.wikipedia.org/wiki/Golden_State_Warriors">Golden State Warriors</a> representing the Western Conference and the <a href="http://en.wikipedia.org/wiki/Cleveland_Cavaliers">Cleveland Cavaliers</a> representing the Eastern Conference will be:
+  </p>
+  
+  <div><img src="http://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/200px-Golden_State_Warriors_logo.svg.png" alt="Golden State Warriors" width="200" height="250">
+  </div>
+  
+  <p><b>The Golden State Warriors!</b></p>
+  
+  </body>
+</html>

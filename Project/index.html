@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SNAKE</title>
+    <link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/snake.ico" type="image/x-icon" />
+</head>
+
+<body>
+	<ul class="navigation">
+		<li id="goToInstructions">
+			<h2>INSTRUCTIONS</h2>
+			<p>FOR NOOBS</p>
+		</li>	
+		<li id="goToStart">
+			<h2>PLAY NOW!</h2>
+			<p>START</p>
+		</li>
+		<li id="goToHallOfFame">
+			<h2>HALL OF FAME</h2>
+			<p>TOP 10 SCORES</p>
+		</li>
+		<li id="oprah">
+			<h2>OPRAH WINFREY</h2>
+			<p>BECAUSE I CAN</p>
+		</li>
+	</ul>
+
+	<div class="centerAlign">
+		<!--FREE ICON SOURCE: http://www.iconarchive.com/show/delightful-zodiac-icons-by-troyboydesign/Snake-icon.html-->
+		<img src="img/snake.png" alt="snake">
+		<!--GAME TITLE GENERATION SOURCE: http://textcraft.net/-->
+		<img src="img/instructions.png" alt="instructions">
+	</div>	
+	
+	<div class="centerAlign">
+		 		
+		<p class="displayInstructionsHeading">HOW TO PLAY:</p>
+		<p class="displayInstructions">You control a snake to eat food while avoiding the walls and the snake's own body.</p>		
+
+		<p class="displayInstructionsHeading">GAMEPLAY:</p>
+		<p class="displayInstructions">Each successful meal allows the snake to grow longer and move faster.</p>
+
+		<p class="displayInstructionsHeading">CONTROLS:</p>
+		<p class="displayInstructions">UP, DOWN, LEFT, RIGHT arrows on your keyboard.</p>
+
+		<p class="displayInstructionsHeading">SUBMITTING HIGH SCORES:</p>
+		<p class="displayInstructions">You will be prompted to submit your name if you reach the top 10 highest scores, ONLY if you are connected to the internet.</p>
+		
+		<p class="displayInstructionsHeading">GOOD LUCK!</p>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$("#goToInstructions").click(function(){
+				location.href = "index.html";
+			});
+			$("#goToStart").click(function(){
+				location.href = "play.html";
+			});
+			$("#goToHallOfFame").click(function(){
+				location.href = "highscores.html";
+			});
+			$("#oprah").click(function(){
+				location.href = "oprah.html";
+			});
+			
+			$(".displayInstructionsHeading").contents().css( "display", "in-line" );
+			$(".displayInstructions").contents().css( "display", "in-line" );
+			$( ".displayInstructionsHeading" ).show( 1200, function showNext() {
+			    $( this ).next( ".displayInstructions" ).slideDown( "slow", showNext );
+			});		
+		});
+	</script>
+	   
+</body>
+</html>
+
+

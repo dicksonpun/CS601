@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+	<link rel="stylesheet" type="text/css" href="indexStyle.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="myFunctions.js"></script>
+
+  </head>
+
+  <body id="mainBody">
+  	
+  	<button id="hideAll">Hide All Images</button>
+  	<button id="showEven">Show Even Images</button>
+  	<button id="showOdd">Show Odd Images</button>
+  	<button id="leftShift">Left Shift</button>
+  	<button id="rightShift">Right Shift</button>
+  	
+  	<div>
+  	  	<p id="rangerType"></p>	
+ 	</div>
+	
+	<section class="rangers">
+		<img id="redranger" src="images/redranger.png" alt="red ranger">
+		<img id="blueranger" src="images/blueranger.png" alt="blue ranger">
+		<img id="blackranger" src="images/blackranger.png" alt="black ranger">
+		<img id="yellowranger" src="images/yellowranger.png" alt="yellow ranger">
+		<img id="pinkranger" src="images/pinkranger.png" alt="pink ranger">
+		<img id="greenranger" src="images/greenranger.png" alt="green ranger">
+		<img id="texasranger" src="images/texasranger.png" alt="texas ranger">
+	</section>
+	<script>
+	
+	$(document).ready(function(){
+		$("#hideAll").click(function(){
+			$("img").hide();
+		});
+		
+		$("#showEven").click(function(){
+			$("img:even").show("slow");
+		});
+			
+		$("#showOdd").click(function(){
+			$("img:odd").show("slow");
+		});
+
+		$("#leftShift").click(function(){
+        	$(".rangers").moveLeft();
+        	$(".rangers").setBackgroundColor(leftShift);
+      	});
+    	
+		$("#rightShift").click(function(){
+        	$(".rangers").moveRight();
+        	$(".rangers").setBackgroundColor(rightShift);
+    	});
+		
+       	$(".rangers").setBackgroundColor();
+	});
+
+	</script>
+  
+  </body>
+</html>

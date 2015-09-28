@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SNAKE</title>
+    <link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="snake.js"></script>
+    <link rel="shortcut icon" href="img/snake.ico" type="image/x-icon" />
+</head>
+
+<body>
+	<ul class="navigation">
+		<li id="goToInstructions">
+			<h2>INSTRUCTIONS</h2>
+			<p>FOR NOOBS</p>
+		</li>	
+		<li id="start">
+			<h2>PLAY NOW!</h2>
+			<p>START</p>
+		</li>
+		<li id="goToHallOfFame">
+			<h2>HALL OF FAME</h2>
+			<p>TOP 10 SCORES</p>
+		</li>
+		<li id="oprah">
+			<h2>OPRAH WINFREY</h2>
+			<p>BECAUSE I CAN</p>
+		</li>
+	</ul>
+
+	<div class="centerAlign">
+		<!--FREE ICON SOURCE: http://www.iconarchive.com/show/delightful-zodiac-icons-by-troyboydesign/Snake-icon.html-->
+		<img src="img/snake.png" alt="snake">
+		<!--GAME TITLE GENERATION SOURCE: http://textcraft.net/-->
+		<img src="img/gameTitle.png" alt="snakeTitle">
+	</div>
+
+	<div class="centerAlign">
+		<canvas id="gameBoard">HTML5 CANVAS NOT SUPPORTED.</canvas>
+		<p id="displayScore"> Score: 0 </p>
+	</div>
+
+	<div class="centerAlign">
+		<p id="displaySubmissionResponse"></p>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$("#start").click(function(){
+				$("#displaySubmissionResponse").innerHTML = "";
+			});
+
+			$("#goToInstructions").click(function(){
+				location.href = "index.html";
+			});
+			$("#goToHallOfFame").click(function(){
+				location.href = "highscores.html";
+			});
+			$("#oprah").click(function(){
+				location.href = "oprah.html";
+			});
+		});
+	</script>
+	   
+</body>
+</html>
+
+

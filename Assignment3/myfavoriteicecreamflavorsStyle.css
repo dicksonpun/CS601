@@ -1,0 +1,64 @@
+﻿@media screen
+{
+	body {
+		background-color:teal;
+		background-image: url("images/background/cow.jpg");
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: center;
+    }
+		
+	ol {
+	    text-align: right;	
+	    font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 150%;
+		font-weight: bold;
+
+	}	
+	
+	ul {
+	    padding: 0;
+	}
+	
+	li {
+	    display: inline;
+	    font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 120%;
+		font-weight: bold;
+	}
+	
+	li.orderedListStyle {
+	    display: block;
+	    font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 100%;
+		font-weight: bold;
+		color: blue;
+		padding-right:10%
+	}
+
+	li.orderedListTitleStyle {
+	    display: block;
+	    font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 120%;
+		font-weight: bolder;
+		font-variant:small-caps;
+		color: navy;
+		padding-right:10%
+	}
+
+	
+	li a {
+		background-color: white;
+		color:#FF8000;
+		padding: 10px 20px;
+		text-decoration: none;
+		border-radius: 20px 20px 20px 20px;
+	}
+	
+	li a:hover {
+		background-color: navy;
+	}
+}

@@ -1,0 +1,79 @@
+@media print
+{
+	body {
+	   background-color: #FFF;
+	}
+
+	.div_western_conference  {
+		float: left;
+		width: 300px;
+		height: 10%;
+		border: 5px solid #06F;
+		background-color:#FF9;
+		z-index: 1;
+	}
+
+	.div_eastern_conference  {
+		float: left;
+		width: 300px;
+		height: 10%;
+		border: 5px solid red;
+		background-color: #09F;
+		z-index: 1;
+	}
+
+	.div_versus  {
+		float: left;
+		width: 50px;
+		height: 50px;
+	}
+
+	.div_prediction  {
+		clear: left;
+		width: 50%;
+		height: 50px;
+	}
+
+	.centeredImage  {
+		position: relative;
+		left: 50px;
+	}
+	.goldenstatewarriors_style {
+		font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 100%;
+		color:#FFF;
+		font-weight: bold;
+		position: relative;
+		left: 50px;
+	}
+
+	.clevelandcavaliers_style {
+		font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 100%;
+		color:#FFF;
+		font-weight: bold;
+		position: relative;
+		left: 50px;
+	}
+
+	.versus_style {
+		font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 100%;
+		color: black;
+		font-weight: bolder;
+		position: relative;
+		left: 10px;
+	}
+
+	.prediction_style {
+		font-family: "Helvetica", "Times New Roman", Times, serif;
+		font-size: 100%;
+		position: relative;
+		left: 10px;
+	}
+}
+
+.conference_center_align{
+	position: relative;
+    left: 25%;
+}

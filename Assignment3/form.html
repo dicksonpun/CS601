@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    
+	<link rel="stylesheet" type="text/css" href="formStyle.css" />
+    </head>
+
+  <body>
+  	<nav class="bannerStyle">
+	  	<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="top10alltimescoring.html">Top 10 All Time Scoring</a></li>
+		  <li><a href="goat.html">Greatest Of All Time</a></li>
+		  <li><a href="myfavoriteicecreamflavors.html">My Favorite Ice Cream Flavors</a></li>
+		  <li><a href="form.html">Form Qualification Test</a></li>
+		</ul>
+  	</nav>
+
+    <section>
+		<form name="myForm" action="http://www.robertie.com/BU/WebDev/form_results.php" method="post">
+			<p class="textStyle">Please enter the following information and click submit.</p>
+			<p class="textStyle">
+			<input type="text" name="firstName" placeholder="First Name"><br/>
+			<input type="text" name="lastName" placeholder="Last Name"><br/>
+			<input type="text" name="facilitator" placeholder="Facilitator Name"><br/>	
+			</p>
+			
+			<p class="textStyle">What are your favorite times of the day?</p>
+			<p class="textStyle">
+			<input type="checkbox" name="radioMessageType" value="Morning"> Morning <br/>
+			<input type="checkbox" name="radioMessageType" value="Afternoon"> Afternoon <br/>
+			<input type="checkbox" name="radioMessageType" value="Night"> Night <br/>
+			</p>
+			
+			<p class="textStyle">Who should have won Finals MVP this year? If someone else, please specify who and why.</p>
+			<p class="textStyle">
+			<input type="radio" name="FMVPcandidate" value="AndreIgoudala" checked="checked">Andre Igoudala <br/>
+			<input type="radio" name="FMVPcandidate" value="StephenCurry">Stephen Curry <br/>
+			<input type="radio" name="FMVPcandidate" value="LebronJames">Lebron James <br/>
+			<input type="radio" name="FMVPcandidate" value="SomeoneElse">Someone Else <br/>
+			<textarea rows="5" cols="50" name="FMVPcomments"></textarea> <br/>
+			
+			<input type="submit" name="submitButton" value="Submit">
+			</p>
+			
+			
+		</form>
+    </section>
+  
+  </body>
+</html>
